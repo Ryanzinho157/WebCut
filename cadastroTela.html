@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro</title>
+    <style>
+           body {
+            margin: 1;
+            padding: 0;
+            background-color: #474747; /* Substitua 'seu_fundo.jpg' pelo caminho da sua imagem de fundo */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Tela de Cadastro</h2>
+        <form>
+            <div class="form-group">
+                <label for="usuario">Usuário:</label>
+                <input type="text" id="usuario" name="usuario" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <div class="form-group">
+                <label for="numero">Número:</label>
+                <input type="number" id="numero" name="numero" required>
+            </div>
+            <div class="form-group">
+                <label for="tipo">Tipo de Cadastro:</label>
+                <select id="tipo" name="tipo">
+                    <option value="cliente">Cliente</option>
+                    <option value="profissional">Profissional</option>
+                </select>
+            </div>
+            <button type="submit">Cadastrar</button> <br>
+            <a href="./login2.html" style=" display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        " class="back-button">Voltar</a>
+        </form>
+    </div>
+ 
+</body>
+</html>
